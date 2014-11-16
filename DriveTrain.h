@@ -2,31 +2,32 @@
 class DriveTrain{
         private:
               //Victors
-              Victor LeftFrontVic;
-              Victor LeftBackVic;
-              Victor RightFrontVic;
-              Victor RIghtBackVic;
+              Victor leftFrontVic;
+              Victor leftBackVic;
+              Victor rightFrontVic;
+              Victor rightBackVic;
+              
+              Joystick leftRightController();
+              Joystick frontwardBackwardController();
               
               //Speeds
               double rotationSpeed;
               double moveSpeed;
               
               enum driveState{
-                MOVE_FORWARD; MOVE_BACKWARDS; STOP; ROTATE_Left; ROTATE_Right:
+                MOVE_FORWARD, MOVE_BACKWARDS, STOP, ROTATE_Left, ROTATE_Right
               }
               
         public:
               
               DriveTrain();
               
-              Update();
+              void update();
               
-              RotateLeft();
+              void rotateLeft();
               
-              RotateRight();
+              void rotateRight();
               
-              MoveForwards();
+              void move();
               
-              MoveBackwards();
-              
-              Stop();
+              void stop();
