@@ -7,9 +7,6 @@ class DriveTrain{
               Victor rightFrontVic;
               Victor rightBackVic;
               
-              Joystick leftRightController();
-              Joystick frontwardBackwardController();
-              
               //Speeds
               double rotationSpeed;
               double moveSpeed;
