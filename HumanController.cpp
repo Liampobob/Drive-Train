@@ -1,0 +1,5 @@
+
+HumanControler::HumanConrtroler():
+{
+
+}
