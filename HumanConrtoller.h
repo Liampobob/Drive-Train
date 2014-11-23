@@ -5,3 +5,4 @@ class HumanControler{
       //Joystick
       Joystick upDownControler();
       Joystick leftRightConrtoler();
+}
