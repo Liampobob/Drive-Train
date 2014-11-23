@@ -1,5 +1,7 @@
 
 HumanControler::HumanConrtroler():
 {
+     leftRightControler(),
+     frontwardBackwardControler()
 
 }
